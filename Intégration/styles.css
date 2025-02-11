@@ -1,0 +1,156 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&family=Signika:wght@300..700&family=Sour+Gummy:ital,wght@0,100..900;1,100..900&display=swap');
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+p, span, h1 {
+    font-family: 'Roboto', sans-serif;
+}
+
+:root {
+    --primaryColour: rgb(92, 147, 187);
+    --backgroundUIText: rgb(187, 181, 206);
+    --colorUIText: rgb(79, 51, 134);
+    --backgroundIconColour: rgb(179, 179, 179);
+    --iconColour: rgb(79, 51, 134);
+    --colourUIInfo: rgb(155, 155, 155);
+}
+
+.uiContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    width: 400px;
+    border: 0.1px solid gray;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.uiContainer > .title {
+    cursor: default;
+    align-self: flex-start; 
+    font-size: 1.5em;
+    font-weight: bold;
+    border-radius: 15px;
+    padding: 10px;
+    background-color: var(--backgroundUIText);
+    color: var(--colorUIText);
+    margin: 0;
+}
+
+.ui {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+}
+
+.ui > .info {
+    color: var(--colourUIInfo);
+    margin: 0;
+}
+
+.serviceUIContainer {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.serviceUIContainer .nbInvitations {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.serviceUIContainer .nbInvitations .icon {
+    font-size: 10px;
+    margin: 0;
+    border: 1px solid var(--iconColour);
+    padding: 10px;
+    border-radius: 50%;
+    background-color: transparent;
+    color: var(--iconColour);
+}
+
+.inviteContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.inviteContainer .imgContainer {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.inviteContainer .imgContainer div {
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    background-color: red;
+}
+
+.inviteContainer .imgContainer div:nth-child(1) {
+    margin-right: -10px;
+    background-color: green;
+}
+
+.inviteContainer .imgContainer div:nth-child(2) {
+    margin-right: -10px;
+    background-color: blue;
+}
+
+.inviteContainer .button.invite {
+    background-color: var(--primaryColour);
+    color: white;
+    padding: 10px;
+    border-radius: 25px;
+    border: none;
+    margin-left: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.inviteContainer .button.invite:hover {
+    background-color: rgb(50, 98, 133);
+}
+
+.footerUIContainer {
+    cursor: default;
+    margin: 0;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2em;
+    border: 1px solid var(--backgroundIconColour);
+    border-radius: 10px;
+    margin-top: 20px;
+}
+
+.footerUIContainer .pictoContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+}
+
+.footerUIContainer .separator {
+    width: 1px;
+    height: 40px;
+    background-color: var(--backgroundIconColour);
+}
+
+.footerUIContainer .picto {
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    background-color: var(--backgroundIconColour);
+}
